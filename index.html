@@ -18,7 +18,7 @@
 
     <style>
        #map {
-        height: 400px;
+        height: 60vh;
         width: 100%;
        }
     </style>
@@ -70,7 +70,7 @@
 
 
 
-    <!--  banner section -->
+    <!--  banner section start -->
     <section class="banner_section">
       <div class="container">
         <div class="row">
@@ -139,9 +139,8 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
-    <!-- banner section -->
+    <!-- banner section end-->
 
 
     <!-- meadia section start -->
@@ -158,7 +157,7 @@
 
 
 
-    <!-- work contant_section start-->
+    <!-- work section start-->
   <section class="work_section">
     <div class="container">
       <div class="row">
@@ -196,7 +195,7 @@
 
     <!-- slider section start -->
 
-  <section class="profile1"></section>
+  <section class="profile1">
     <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
     <ol class="carousel-indicators">
       <li data-target="#testimonial4" data-slide-to="0" class="active"></li>
@@ -340,23 +339,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz1dybe5-3HbYiDIpDsBr3nIqCs5OqqTE&callback=initMap">
-    </script>
 
+<!-- 
     <script>
       function initMap() {
-        var uluru = {lat:24.7531319, lng:90.4191408,};
+        var uluru = {lat:24.7531319, lng:90.4191408};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom:12,
+          zoom: 4,
           center: uluru
         });
         var marker = new google.maps.Marker({
           position: uluru,
-          map: map;
-          icon:"images/logo.png";
+          map: map;         
         });
       }
     </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz1dybe5-3HbYiDIpDsBr3nIqCs5OqqTE&callback=initMap">
+    </script> -->
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7JRBfkDJpfthG_vVE9CbvH1F5FDh1H7Y&callback=initMap">
+    </script>
   </body>
+    <script>
+      function initMap() {
+        var location = {lat:24.0655233, lng:90.3832684,};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom:7,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          icon:"images/logo.png" 
+        });
+      }
+    </script>
 </html>

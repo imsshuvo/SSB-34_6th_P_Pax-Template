@@ -500,6 +500,9 @@ span{
 
 
 /*our team section*/
+
+
+
 .our_team_secton{
 	background: #edeff1;
 }
@@ -530,8 +533,6 @@ span{
 	font-size: 18px;
 	color: #999;
 }
-
-
 .bottonn {
 	padding: 70px;
 	text-align: center;
@@ -543,10 +544,22 @@ span{
     padding: 12px 45px;
     border-radius: 25px;
 }
-.contantt button:hover{
+.bottonn button:hover{
+  border-radius: 25px;
+  cursor: pointer;
 	background: #0149A1;
 	color: #fff;
 }
+
+/*team section*/
+
+
+
+
+
+/*contantt section*/
+
+
 
 .contantt_section{
 	background:#0149a1;
@@ -579,3 +592,8 @@ span{
 	cursor: pointer;
 	color: yellow;
 }
+
+/*contantt section*/
+
+
+
